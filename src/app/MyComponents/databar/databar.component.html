@@ -1,0 +1,11 @@
+<nav class="nav">
+    <a class="nav-item nav-link active-show" (click)="activate('apple')" aria-selected="true" id = "apple" data-toggle="tab" href="#most-active" role="tab" >Apple</a>
+    <a class="nav-item nav-link" (click)="activate('ibm')" aria-selected="flase" id = "ibm" data-toggle="tab" href="#most-active" role="tab">IBM</a>
+    <a class="nav-item nav-link" (click)="activate('microsoft')" aria-selected="false" id = "microsoft" data-toggle="tab" href="#most-active" role="tab">Microsoft </a>
+    <a class="nav-item nav-link" (click)="activate('netflix')" aria-selected="false" id = "netflix" data-toggle="tab" href="#most-active" role="tab">Netflix</a>
+    <a class="nav-item nav-link" (click)="activate('meta')" aria-selected="false" id = "meta" data-toggle="tab" href="#most-active" role="tab">Meta</a>
+ </nav>
+ <div>
+    <app-data-area [id]="prevSelectedID"></app-data-area>
+</div>
+

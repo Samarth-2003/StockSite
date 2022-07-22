@@ -1,0 +1,36 @@
+<div  class="para-container">
+  <div class = "option-box">
+    <label class="check-box">Opening
+    <input type="checkbox" (change)="Onchange('open')" class="options" name="Opening" id="open" checked>
+    <span class="checkmark"></span>
+  </label>
+  <label class="check-box"> 
+    <input type="checkbox" (change)="Onchange('close')" class="options" name="Closing" id="close">Closing
+    <span class="checkmark"></span>
+  </label>
+  <label class="check-box"> 
+    <input type="checkbox" (change)="Onchange('high')" class="options" name="High" id="high">High
+    <span class="checkmark"></span>
+  </label>
+    <label class="check-box"> 
+    <input type="checkbox" (change)="Onchange('low')" class="options" name="Low" id="low">Low
+    <span class="checkmark"></span>
+  </label>
+</div>
+<div class="drop-down" style="width:200px ; vertical-align: top;">
+  <select #t class="form-select" aria-label="Default select example" (change)="ChangeData(t.value)">
+    
+    <option value="daily" >Daily data</option>
+    <option value="monthly" >Monthly data</option>
+    <option value="intra-day">Intra day</option>
+    <option value="weekly">Weekly Data</option>
+  </select>
+</div>
+</div>
+<section>
+<div class ="box" id="graph-container">
+  <canvas id="stock-chart"></canvas>
+</div>
+</section>
+
+

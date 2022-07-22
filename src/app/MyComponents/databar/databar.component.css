@@ -1,0 +1,41 @@
+.nav-link{
+   
+    margin-right: 35px;
+}
+.active-show{
+    color:rgb(115, 127, 241);
+    text-underline-position: below;
+    border-bottom: 4px solid;
+    animation-name: fadein;
+    animation-duration: 100ms;
+}
+.nav{
+    background: #212020;
+    font-size: 22px;
+    padding-left: 20px;
+}
+
+@keyframes fadein{
+    from{color:blue;}
+    to{color:rgb(42, 54, 165);}}
+
+
+@media(max-width:640px){
+    .nav{
+        font-size: large;
+    }
+    .nav-link{
+        margin-right: 10px;
+    }
+
+}
+@media(max-width:475px){
+    .nav{
+        font-size: medium;
+    }
+    .nav-link{
+        margin-right: 0px;
+        padding-right: 0.2rem;
+    }
+}
+    

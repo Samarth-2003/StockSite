@@ -35,7 +35,7 @@ export class DataAreaComponent implements OnInit {
     this.Y_close = [1, 2, 3, 4, 5];
     this.Y_high = [1, 2, 3, 4, 5];
     this.Y_low = [1, 2, 3, 4, 5];
-    this._url = 'https://stock-project-samarth.herokuapp.com/data';
+    this._url = 'https://my-project-backend-production.up.railway.app/data';
     //this._url = 'http://127.0.0.1:5000/data';
     this.stocks = [];
     this.display_open = true;
